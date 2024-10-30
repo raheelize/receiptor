@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    font-size: 11px; /* Set base font size to 11px */
+    margin: 0; /* Remove default body margin */
+}
+
+header h1 {
+    font-weight: bold;
+    color: #007bff;
+    font-size: 12px; /* Heading size */
+    margin: 0; /* Remove margin for header */
+}
+
+.card {
+    border-radius: 8px;
+    margin: 5px; /* Reduced margin between cards */
+    page-break-inside: avoid; /* Prevent page breaks inside cards */
+}
+
+#receiptContainer h3 {
+    font-size: 12px; /* Heading size */
+    font-weight: bold;
+    color: #007bff;
+    margin: 5px 0; /* Reduced margin above and below headings */
+}
+
+.table th, .table td {
+    padding: 4px; /* Reduced padding for table cells */
+    vertical-align: middle;
+    font-size: 11px; /* Set table font size to 11px */
+}
+
+.table th.bg-light {
+    background-color: #f2f2f2;
+}
+
+.card-header {
+    font-size: 12px; /* Bold text size */
+    font-weight: bold;
+    margin: 0; /* Remove margin for card header */
+    padding: 4px; /* Reduced padding for card header */
+}
+
+.card-body {
+    padding: 8px; /* Reduced padding for card body */
+    font-size: 11px; /* Set card body font size to 11px */
+    page-break-inside: avoid; /* Prevent page breaks inside card bodies */
+}
+
+.input-group .form-control {
+    border-radius: 0.5rem 0 0 0.5rem;
+    padding: 5px; /* Adjusted padding for input fields */
+}
+
+.input-group .btn-primary {
+    border-radius: 0 0.5rem 0.5rem 0;
+    padding: 5px 10px; /* Adjusted padding for button */
+}
+
+@media print {
+    body {
+        margin: 0; /* Ensure no margins when printing */
+    }
+
+    .card {
+        page-break-inside: avoid; /* Prevent page breaks inside cards */
+    }
+
+    .table {
+        page-break-inside: avoid; /* Prevent breaks inside tables */
+    }
+
+    .card-body {
+        page-break-inside: avoid; /* Prevent breaks inside card bodies */
+    }
+
+    /* Add any additional print-specific styles here */
+}
