@@ -14,19 +14,19 @@ header h1 {
 
 .card {
     border-radius: 8px;
-    margin: 5px; /* Reduced margin between cards */
+    margin: 0px; /* Reduced margin between cards */
     page-break-inside: avoid; /* Prevent page breaks inside cards */
 }
 
 #receiptContainer h3 {
-    font-size: 12px; /* Heading size */
+    font-size: 11px; /* Heading size */
     font-weight: bold;
     color: #007bff;
     margin: 5px 0; /* Reduced margin above and below headings */
 }
 
 .table th, .table td {
-    padding: 4px; /* Reduced padding for table cells */
+    padding: 1px; /* Reduced padding for table cells */
     vertical-align: middle;
     font-size: 11px; /* Set table font size to 11px */
 }
@@ -39,11 +39,11 @@ header h1 {
     font-size: 12px; /* Bold text size */
     font-weight: bold;
     margin: 0; /* Remove margin for card header */
-    padding: 4px; /* Reduced padding for card header */
+    padding: 2px; /* Reduced padding for card header */
 }
 
 .card-body {
-    padding: 8px; /* Reduced padding for card body */
+    padding: 4px; /* Reduced padding for card body */
     font-size: 11px; /* Set card body font size to 11px */
     page-break-inside: avoid; /* Prevent page breaks inside card bodies */
 }
@@ -55,7 +55,7 @@ header h1 {
 
 .input-group .btn-primary {
     border-radius: 0 0.5rem 0.5rem 0;
-    padding: 5px 10px; /* Adjusted padding for button */
+    padding: 5px 11px; /* Adjusted padding for button */
 }
 
 @media print {
