@@ -6,6 +6,7 @@
     <title>Receiptor - Generating Order Receipts Made Easier</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- jQuery inclusion -->
 </head>
 <body>
 
@@ -16,22 +17,38 @@
         <h4 class="lead">Generating Order Receipts Made Easier</h4>
     </header>
 
-    <!-- File Upload Section -->
+    <!-- Sender Information Form -->
     <div class="card p-4 shadow-sm mb-4">
-        <h3 class="card-title">Upload Your Excel File</h3>
-        <h6 class="card-text">After uploading, click "Generate Receipts" to preview the receipts. Press <code class="p-2">CTRL + P</code> to print.</h6>
-        <div class="input-group">
-            <input type="file" id="excelFile" class="form-control">
-            <button id="generateReceipts" class="btn btn-primary">Generate Receipts</button>
-        </div>
+        <h3 class="card-title">Enter Sender Information</h3>
+        <form id="senderForm">
+            <div class="mb-3">
+                <label for="senderName" class="form-label">Sender Name</label>
+                <input type="text" id="senderName" class="form-control" required>
+            </div>
+            <div class="mb-3">
+                <label for="senderAddress" class="form-label">Sender Address</label>
+                <input type="text" id="senderAddress" class="form-control" required>
+            </div>
+            <div class="mb-3">
+                <label for="senderCity" class="form-label">Sender City</label>
+                <input type="text" id="senderCity" class="form-control" required>
+            </div>
+            <div class="mb-3">
+                <label for="senderPhone" class="form-label">Sender Phone Number</label>
+                <input type="text" id="senderPhone" class="form-control" required>
+            </div>
+            <div class="mb-3">
+                <label for="excelFile" class="form-label">Upload Excel File</label>
+                <input type="file" id="excelFile" class="form-control" required>
+            </div>
+            <button type="submit" id="generateReceipts" class="btn btn-primary">Generate Receipts</button>
+        </form>
     </div>
 </div>
 
 <div class="container">
     <!-- Receipt Preview Section -->
     <div id="receiptContainer" class="d-none">
-        <!-- <h3 class="text-center mb-4">Receipt Preview</h3> -->
-        
         <div id="tableWrapper" class="row"></div>
     </div>
 </div>
